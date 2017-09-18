@@ -16,4 +16,13 @@ Declarando a existencia das bibliotecas TDSODBC no `odbcinst.ini`
 ```bash
 vim /etc/odbcinst.ini
 ```
+Acrescente no arquivo ini a seguinte seçao
+
+```conf
+[FreeTDS]
+  Description = TDS Driver for MSSQL
+  driver = /usr/lib/x86_64-linux-gnu/odbc/libtdsodbc.so
+  setup =  /usr/lib/x86_64-linux-gnu/odbc/libtdsS.so
+```
+
 Agora, a biblioteca de suporte ao sistema ODBC do framework QT (sob o qual eh feito o QGIS), acessa MS-SQL Server, via ODBC, claro.
