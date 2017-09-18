@@ -3,6 +3,8 @@
 ### 1. Introduçao
 ### 2. O Suporte do MS-SQL Server a Infraestrutura de Dados Espaciais
 ### 3. O Linux e o suporte ao MS-SQL Server
+O Linux pode conversar nativamente com SGBDs Microsoft e Sybase utilizando a biblioteca [FreeDTS](http://www.freetds.org/), e por esta razao, iremos procurar este pacote para dsitro especifica e iremos instala-lo.
+
 ### 4. O QGIS e o suporte a MS-SQL Server
 #### 4.1 Garantindo que os conectores provedores do framework Qt estao instalados no Debian
 
