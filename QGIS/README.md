@@ -4,10 +4,23 @@
 ### 2. O Suporte do MS-SQL Server a Infraestrutura de Dados Espaciais
 ### 3. O Linux e o suporte ao MS-SQL Server
 ### 4. O QGIS e o suporte a MS-SQL Server
+#### 4.1 Garantindo que os conectores provedores do framework Qt estao instalados no Debian
+
+```bash
+# suporte a conectores para framework Qt 4
+libqt4-sql*
+# suporte a conectores para framework Qt 5
+apt-get install libqt5sql5*
+# instalando o pacote de scripts sql do qt  
+apt-get install libqtscript4-sql
+```
+
 ### 5. A Distribuiçao Debian e suas variantes e o suporte a MS-SQL Server
 #### 5.1 O Suporte do ODBC em Linux
+
 #### 5.2 O Suporte do ODBC no Debian
 ```bash
+apt-get install unixodbc unixodbc-dev unixodbc-bin
 # instalando o pacote tdsodbc
 apt-get install tdsodbc
 ```
